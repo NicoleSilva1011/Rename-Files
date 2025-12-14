@@ -1,24 +1,48 @@
 # Rename-Files
-This Python script renames all files in a specified folder to a uniform naming pattern: file_0.txt, file_1.txt, file_2.txt, and so on. 
 
-How It Works
+This Python script renames all files in a specified folder to a uniform naming pattern: `file_0.txt`, `file_1.txt`, `file_2.txt`, and so on.
+
+## How It Works
 The script loops through all files in a specified directory and renames them in a numbered sequence.
 
-Example
+### Example
 If you have a folder with files:
-test1.txt  
-image.png  
-notes.docx  
+```
+test1.txt
+image.png
+notes.docx
+```
 After running the script, they will be renamed to:
+```
+file_0.txt
+file_1.txt
+file_2.txt
+```
 
-file_0.txt  
-file_1.txt  
-file_2.txt  
-How to Use
-Update the path variable in the main() function to the folder you want to rename files in.
+## Project Structure
+```
+Rename-Files/
+├── main.py       # Script to rename files
+├── README.md     # Project documentation
+└── Testes/       # Example folder with files to rename
+    ├── file_0.txt
+    ├── file_1.txt
+    ├── file_2.txt
+    ├── file_3.txt
+    └── file_4.txt
+```
 
-Run the script using:
-python rename_files.py
+## How to Use
+1. Update the `path` variable in the `main()` function of `main.py` to the folder you want to rename files in.
+2. Run the script using the following command:
+   ```
+   python main.py
+   ```
 
-Important
-Make sure the folder only contains files you want to rename. The script will rename all files in the folder.
+## Important Notes
+- Ensure the folder only contains files you want to rename. The script will rename **all files** in the folder.
+- The script is designed for Windows paths. Adjust the `path` variable if using another operating system.
+
+## Requirements
+- Python 3.x
+- No additional libraries are required.
